@@ -13,7 +13,7 @@ public class HomePageTestClass extends BaseClass
 	LoginPage lp;
 	HomePage hp;
 	
-  @Test
+  @Test(priority=1,groups = {"group1"})
   public void varifyProductTabIsDisplayedOrNot() throws IOException 
   {
 	  lp=new LoginPage(driver);
@@ -26,7 +26,7 @@ public class HomePageTestClass extends BaseClass
 	  Boolean actual=hp.isProductTabDisplayed();
 	  Assert.assertTrue(actual);
   }
-  @Test
+  @Test(priority=2,groups = {"group1"})
     public void varifyD4StoreIsDisplayedOrNot() throws IOException 
   {
 	  lp=new LoginPage(driver);
@@ -39,7 +39,7 @@ public class HomePageTestClass extends BaseClass
 	  Boolean actual=hp.isD4StoreDisplayedOrNot();
 	  Assert.assertTrue(actual);
   }
-  @Test
+  @Test(priority=3,groups = {"functional"})
     public void varifyLogoutButtonIsWorkingOrNot() throws IOException 
   {
 	  lp=new LoginPage(driver);

@@ -15,7 +15,7 @@ public class ProductPageTestClass extends BaseClass
 	LoginPage lp;
 	ProductPage pp;
 	
-  @Test(priority=1)
+  @Test(priority=1,groups = {"group1"})
   public void VerifyTheProductPageIsOpenedByClickingTheProductTab() throws IOException 
   {
 	  lp=new LoginPage(driver);
@@ -29,7 +29,7 @@ public class ProductPageTestClass extends BaseClass
 	  Assert.assertTrue(actual);
   }
   
-  @Test(priority=2)
+  @Test(priority=2,groups = {"add"})
   public void VerifyToAddaNewProduct() throws IOException, InterruptedException 
   
   {
@@ -52,7 +52,7 @@ public class ProductPageTestClass extends BaseClass
 	  
   }
   
-  @Test(priority=3)
+  @Test(priority=3,groups = {"search"})
   public void  VerifySearchFunctionalityByUsingProductName() throws IOException
   {
 	  lp=new LoginPage(driver);
@@ -69,7 +69,7 @@ public class ProductPageTestClass extends BaseClass
 	  Assert.assertEquals(expected,actual);
   }
   
-  @Test(priority=4)
+  @Test(priority=4,groups = {"search"})
   public void  VerifySearchFunctionalityByUsingProductCode() throws IOException
   {
 	  lp=new LoginPage(driver);
@@ -84,7 +84,7 @@ public class ProductPageTestClass extends BaseClass
 	  String actual=pp.searchById();
 	  Assert.assertEquals(expected,actual);
   }
-  @Test(priority=5)
+  @Test(priority=5,groups = {"edit"})
   public void  VerifyEditFunctionality() throws IOException
   {
 	  lp=new LoginPage(driver);
@@ -106,7 +106,7 @@ public class ProductPageTestClass extends BaseClass
 	  
 	  
   }
-  @Test(priority=6)
+  @Test(priority=6,groups = {"delete"})
   public void  VerifyDeleteFunctionality() throws IOException
   {
 	  lp=new LoginPage(driver);

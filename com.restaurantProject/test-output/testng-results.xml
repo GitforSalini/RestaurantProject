@@ -1,73 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="5" total="6" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-15T23:10:27 IST" name="Default suite" finished-at="2023-02-15T23:11:33 IST" duration-ms="65225">
+  <suite started-at="2023-02-17T14:15:59 IST" name="Default suite" finished-at="2023-02-17T14:15:59 IST" duration-ms="74">
     <groups>
     </groups>
-    <test started-at="2023-02-15T23:10:27 IST" name="Default test" finished-at="2023-02-15T23:11:33 IST" duration-ms="65225">
-      <class name="executeClasses.CustomersPageTestClass">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:10:27 IST" name="beforeMethod" finished-at="2023-02-15T23:10:34 IST" duration-ms="6045" status="PASS">
+    <test started-at="2023-02-17T14:15:59 IST" name="Default test" finished-at="2023-02-17T14:15:59 IST" duration-ms="74">
+      <class name="executeClasses.ProductPageTestClass">
+        <test-method is-config="true" signature="createReport(org.testng.ITestContext)[pri:0, instance:executeClasses.ProductPageTestClass@515c6049]" started-at="2023-02-17T14:15:59 IST" name="createReport" finished-at="2023-02-17T14:15:59 IST" duration-ms="294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6d167f58]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createReport -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:executeClasses.ProductPageTestClass@515c6049]" started-at="2023-02-17T14:15:59 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1676623559547" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in C:\Users\salin\AppData\Local\Temp\testng-eclipse-428228829\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in C:\Users\salin\AppData\Local\Temp\testng-eclipse-428228829\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyThecustomerPageIsVisibleByClickingOncustomersunderPeopleTab()[pri:1, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:10:34 IST" name="verifyThecustomerPageIsVisibleByClickingOncustomersunderPeopleTab" finished-at="2023-02-15T23:10:40 IST" duration-ms="6178" status="PASS">
+        <test-method signature="VerifyToAddaNewProduct()[pri:2, instance:executeClasses.ProductPageTestClass@515c6049]" started-at="2023-02-17T14:15:59 IST" name="VerifyToAddaNewProduct" finished-at="2023-02-17T14:15:59 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in C:\Users\salin\AppData\Local\Temp\testng-eclipse-428228829\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in C:\Users\salin\AppData\Local\Temp\testng-eclipse-428228829\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyThecustomerPageIsVisibleByClickingOncustomersunderPeopleTab -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:10:40 IST" name="afterMethod" finished-at="2023-02-15T23:10:40 IST" duration-ms="271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:10:40 IST" name="beforeMethod" finished-at="2023-02-15T23:10:44 IST" duration-ms="3944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyTheAddcustomerButtonIsVisibleOrNot()[pri:2, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:10:44 IST" name="verifyTheAddcustomerButtonIsVisibleOrNot" finished-at="2023-02-15T23:10:50 IST" duration-ms="5884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTheAddcustomerButtonIsVisibleOrNot -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:10:50 IST" name="afterMethod" finished-at="2023-02-15T23:10:50 IST" duration-ms="257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:10:50 IST" name="beforeMethod" finished-at="2023-02-15T23:10:54 IST" duration-ms="3655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="veriytoAddaNewcustomer()[pri:3, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:10:54 IST" name="veriytoAddaNewcustomer" finished-at="2023-02-15T23:11:02 IST" duration-ms="8367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- veriytoAddaNewcustomer -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:11:02 IST" name="afterMethod" finished-at="2023-02-15T23:11:02 IST" duration-ms="168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:11:02 IST" name="beforeMethod" finished-at="2023-02-15T23:11:06 IST" duration-ms="4141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifytoSearchACustomerByUsingName()[pri:4, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:11:06 IST" name="verifytoSearchACustomerByUsingName" finished-at="2023-02-15T23:11:17 IST" duration-ms="10498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifytoSearchACustomerByUsingName -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:11:17 IST" name="afterMethod" finished-at="2023-02-15T23:11:17 IST" duration-ms="200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:11:17 IST" name="beforeMethod" finished-at="2023-02-15T23:11:22 IST" duration-ms="4460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifytoSearchACustomerByUsingMobileNumber()[pri:5, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:11:22 IST" name="verifytoSearchACustomerByUsingMobileNumber" finished-at="2023-02-15T23:11:32 IST" duration-ms="10884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifytoSearchACustomerByUsingMobileNumber -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:executeClasses.CustomersPageTestClass@145f66e3]" started-at="2023-02-15T23:11:32 IST" name="afterMethod" finished-at="2023-02-15T23:11:33 IST" duration-ms="207" status="PASS">
+        </test-method> <!-- VerifyToAddaNewProduct -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:executeClasses.ProductPageTestClass@515c6049]" started-at="2023-02-17T14:15:59 IST" name="afterMethod" finished-at="2023-02-17T14:15:59 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- executeClasses.CustomersPageTestClass -->
+      </class> <!-- executeClasses.ProductPageTestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

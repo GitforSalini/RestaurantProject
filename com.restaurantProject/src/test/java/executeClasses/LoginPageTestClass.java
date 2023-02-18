@@ -10,7 +10,7 @@ public class LoginPageTestClass extends BaseClass
 {
 	LoginPage lp;
 	
-  @Test(priority=1)
+  @Test(priority=1,groups = {"group1"})
   public void varifyTheLoginPageIsDisplayedByHittingTheUrl() throws InterruptedException 
   {
 	  lp=new LoginPage(driver);
@@ -18,7 +18,7 @@ public class LoginPageTestClass extends BaseClass
 	  Boolean actual=lp.isLoginTextDisplayed();
 	  Assert.assertTrue(actual);
   }
-  @Test(priority=3)
+  @Test(priority=2,groups = {"group1"})
   public void varifyTheRestaurantLogoIsDisplayed() 
   {
 	  lp=new LoginPage(driver);
@@ -26,7 +26,7 @@ public class LoginPageTestClass extends BaseClass
 	  Boolean actual=lp.isLogoDisplayed();
 	  Assert.assertTrue(actual);
   }
-  @Test(priority=2,dataProvider="SuccessfulLogin",dataProviderClass=DataProviderClass.class)
+  @Test(priority=3,dataProvider="SuccessfulLogin",dataProviderClass=DataProviderClass.class,groups = {"login-1"})
   public void varifySuccessfulLogin(String uname,String pwd) 
   {
 	  lp=new LoginPage(driver);
@@ -43,7 +43,7 @@ public class LoginPageTestClass extends BaseClass
 	  
   }
   
-  @Test(priority=4,dataProvider="UnSuccessfulLogin",dataProviderClass=DataProviderClass.class)
+  @Test(priority=4,dataProvider="UnSuccessfulLogin",dataProviderClass=DataProviderClass.class,groups = {"login-2"})
   public void varifyUnSuccessfulLogin(String uname,String pwd) throws InterruptedException 
   {
 	  lp=new LoginPage(driver);
