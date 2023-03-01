@@ -82,5 +82,9 @@ public class LoginPage
 	{
 		return(ExcelReadClass.readStringData(row, col));
 	}
-	
+	public void login() throws IOException {
+		enterUserName(readUserName(0, 1));
+		enterpassword(readPassword(1, 1));
+		clickOnLoginButton();
+	}
 }
