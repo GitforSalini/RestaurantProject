@@ -49,6 +49,7 @@ public class ProductPageTestClass extends BaseClass
 	 
 	  lp.login();
 	  uniqCode=pp.addProduct();
+	  System.out.println("New Product Added");
 	  
 	 /* pp.productTabClick();
 	  pp.clickOnAddProduct();
