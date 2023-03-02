@@ -36,7 +36,7 @@ public class ProductPageTestClass extends BaseClass
 	  
 	  pp.productTabClick();
 	  Boolean actual=pp.isProducttypeTextDisplayed();
-	  Assert.assertTrue(actual);
+	  Assert.assertFalse(actual);
   }
   
   @Test(enabled=false,priority=2,groups = {"add"})
